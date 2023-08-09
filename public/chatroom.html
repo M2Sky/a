@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="/images/favicon.ico">
+    <main>
+        <div class="back">
+            <a href="/index.html">home</a>
+    </div>
+<html>
+	<head>
+        <title>Chatroom</title>
+		<style>
+			body {
+			background-color: #2b2a33;
+			color: #7ee3fa;
+			font-family: 'Courier New', Courier, monospace;
+			font-size: 200%;
+			}
+		</style>
+	</head>
+    <body>
+         <button>Enter the chatroom!</button>
+    <script>
+      var urlObj = new window.URL(window.location.href);
+      var url = "https://e.widgetbot.io/channels/974413277553627176/1053102533318549524";
+      if (url) {
+        var win;
+ 
+        document.querySelector('button').onclick = function() {
+          if (win) {
+            win.focus();
+          } else {
+            win = window.open();
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+            var iframe = win.document.createElement('iframe');
+            iframe.style.border = 'none';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.margin = '0';
+            iframe.src = url;
+            win.document.body.appendChild(iframe);
+          }
+          document.querySelector('button').style.bacground = 'grey';
+          document.querySelector('button').innerHTML = "Loaded! If it is broken reload this page.";
+        };
+      }
+ 
+    </script>
+    </body>
+  </main>
+</html>
+<div style="text-align: left; font-size: 12px;" class="footer">A - PROJECT - OF - M_2 DEVELOPMENT <a class="link" href="/terms-privacy.html">Terms &amp; Privacy</a> (This new design was made by the M_2 Development Team) </div>
